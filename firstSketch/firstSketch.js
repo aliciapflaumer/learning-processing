@@ -7,8 +7,8 @@ function draw() {
   stroke(0);
   fill(167, 162, 162);
   // The 5th parameter adds rounded corners
-  rect(240, 210, 110, 200,7);
-  
+  rect(240, 210, 110, 200, 7);
+
   // head
   noFill();
   ellipse(295, 155, 110, 110);
@@ -24,5 +24,4 @@ function draw() {
   stroke(0);
   line(240, 230, 220, 300); 
   line(350, 230, 420, 220);
-  
 }
