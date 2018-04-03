@@ -2,19 +2,20 @@ void setup() {
  size(200,200); 
 }
 
-int circleX = 0;
-int circleY = 100;
-int circleW = 50;
-int circleH = 50;
+float circleStroke = 0;
+float circleFill = 255;
+float circleX = 0;
+float circleY = 0;
+float circleW = 100;
+float circleH = 100;
 
 void draw() {
-  background(255);
-  
-  stroke(0);
-  fill(175);
+  background(175);
+  ellipseMode(CENTER);
+  stroke(circleStroke);
+  fill(circleFill);
   ellipse(circleX, circleY, circleW, circleH);
- 
- circleX = circleX + 1;
- circleW = circleW + 1;
- circleH = circleH + 1;
+  
+  circleX = circleX + 1;
+  circleY = circleY + 1;
 }
