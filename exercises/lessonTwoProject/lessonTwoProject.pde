@@ -1,21 +1,27 @@
 void setup() {
- size(200,200); 
+ size(600,500); 
 }
 
-float circleStroke = 0;
-float circleFill = 255;
-float circleX = 0;
-float circleY = 0;
-float circleW = 100;
-float circleH = 100;
-
 void draw() {
-  background(175);
-  ellipseMode(CENTER);
-  stroke(circleStroke);
-  fill(circleFill);
-  ellipse(circleX, circleY, circleW, circleH);
+  background(255);
   
-  circleX = circleX + 1;
-  circleY = circleY + 1;
+  translate(mouseX, mouseY);
+  
+  // Set ellipses and rects to CENTER mode
+  rectMode(CENTER);
+  ellipseMode(CENTER);
+  
+  // body
+  stroke(0);
+  fill(#4359AF);
+  rect(0, 0, 30, 60);
+  
+  // head
+  fill(#F2D189);
+  ellipse(0, -40, 50, 50);
+  
+  //eyes
+  fill(0);
+  ellipse(-9, -40, 10, 10);
+  ellipse(+9, -40, 10, 10);
 }
