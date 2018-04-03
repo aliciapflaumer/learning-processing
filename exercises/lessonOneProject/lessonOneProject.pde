@@ -21,7 +21,8 @@ void draw() {
   
   //eyes
   fill(0);
-  ellipse(mouseX-29, mouseY-20, 20, 20);
+  ellipse(mouseX-9, mouseY-40, 10, 10);
+  ellipse(mouseX+9, mouseY-40, 10, 10);
 }
 
 void mousePressed() {
