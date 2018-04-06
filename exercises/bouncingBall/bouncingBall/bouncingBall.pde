@@ -1,22 +1,19 @@
-boolean button = true;
-
-int x = 50;
-int y = 50;
-int w = 100;
-int h = 100;
+int x = 0;
+int speed = 1;
 
 void setup() {
- size(500, 500); 
+ size(300, 300); 
 }
 
 void draw() {
   background(227, 218, 206);
-  
-  noStroke();
+  stroke(0);
   fill(#659FD1);
-  ellipse(x, y, w, h);
-}
-
-void mousePressed() {
- 
+  ellipse(x, 100, 30, 30);
+  
+  x = x + speed;
+  
+  if ((x > width) || (x < 0)) {
+   speed = speed * -1; 
+  }
 }
