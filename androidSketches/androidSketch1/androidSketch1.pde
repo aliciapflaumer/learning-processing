@@ -1,9 +1,11 @@
 void setup() {
   fullScreen();
+  background(#C9DCED);
 }
 
 void draw() {
-  background(#C9DCED);
-  stroke(0);
- line(pmouseX, pmouseY, mouseX, mouseY); 
+  if (mousePressed) {
+    stroke(0);
+    line(pmouseX, pmouseY, mouseX, mouseY);
+  }
 }
