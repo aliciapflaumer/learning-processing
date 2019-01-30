@@ -17,7 +17,7 @@ void drawFlower(){
   strokeWeight(1.0);
   stroke(0);
   fill(175);
-  ellipse(200, 150, 50, 50);
+  ellipse(200, 150, 30, 30);
   
   // Draw pedals
   
