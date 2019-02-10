@@ -4,11 +4,13 @@ class Car {
  float ypos;
  float xspeed;
 
- Car() {
-   c = color(255);
-   xpos = width/2;
-   ypos = height/2;
-   xspeed = 1;
+// Create constructor function Car()
+// Add arguments to constructor
+ Car(color tempC, float tempX, float tempY, float tempXspeed) {
+   c = tempC;
+   xpos = tempX;
+   ypos = tempY;
+   xspeed = tempXspeed;
  }
 
  void display(){
