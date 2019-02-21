@@ -2,7 +2,7 @@ class Stripe {
   float x; // horizontal location of stripe
   float speed; // speed of stripe
   float w; // width of stripe
-  boolean mouse; // Is the mouse of the stripe?
+  boolean mouse; // Is the mouse over the stripe?
 
   Stripe() {
     x = 0; // All stripes start at 0
