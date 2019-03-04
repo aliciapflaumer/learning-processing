@@ -2,13 +2,14 @@ void settings() {
   size(300,300);
 }
 
-
 void setup() {
-  background(100);
+
 }
 
 void draw() {
+  background(100);
+
   fill(255);
   noStroke();
-  ellipse(100, 100, 20, 20);
+  ellipse(mouseX, mouseY, 20, 20);
 }
